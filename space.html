@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Space Explorer</title>
+  <style>
+    body {
+      background: radial-gradient(circle at top, #0b0c2a, #000);
+      color: #fff;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      text-align: center;
+      padding: 30px;
+    }
+
+    h1 {
+      color: #00ffff;
+      font-size: 3em;
+    }
+
+    p {
+      font-size: 1.2em;
+      margin: 15px auto;
+      max-width: 600px;
+    }
+
+    img {
+      width: 250px;
+      border-radius: 15px;
+      margin: 20px 0;
+      box-shadow: 0 0 15px #00ffff;
+    }
+
+    ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    li {
+      margin: 10px 0;
+      font-weight: bold;
+    }
+
+    a {
+      color: #ff69b4;
+      text-decoration: none;
+    }
+
+    footer {
+      margin-top: 40px;
+      font-size: 0.9em;
+      color: #888;
+    }
+
+    details {
+      margin: 20px auto;
+      max-width: 500px;
+      text-align: left;
+      background-color: #111;
+      padding: 10px;
+      border-radius: 10px;
+    }
+
+    meter {
+      width: 100%;
+      height: 20px;
+    }
+
+    time {
+      font-weight: bold;
+      color: #ffa500;
+    }
+
+    mark {
+      background-color: yellow;
+      color: black;
+      padding: 0 5px;
+    }
+
+    output {
+      display: block;
+      color: #00ff99;
+      margin-top: 10px;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>🌌 Welcome to Space Explorer!</h1>
+
+  <p><mark>Space Explorer</mark> is your gateway to the universe. Ready to launch?</p>
+
+  <img src="https://i0.wp.com/media2.spaceref.com/news/2012/ooeso1205a.jpg?quality=89&ssl=1&w=780" alt="Galaxy" />
+
+  <h2>Top 3 Missions:</h2>
+  <ul>
+    <li>🚀 Moon Colony 2040</li>
+    <li>🪐 Titan Submarine Dive</li>
+    <li>🌠 Interstellar Warp Jump Test</li>
+  </ul>
+
+  <details>
+    <summary>Click to see Mission Countdown</summary>
+    Launch in: <time datetime="2025-12-01T09:00">December 1st, 2025 at 09:00 AM</time>
+  </details>
+
+  <p>Fuel Level:</p>
+  <meter value="0.2">20%</meter>
+
+  <p>Choose your path:</p>
+  <form oninput="output.value = rangeInput.value">
+    <input type="range" id="rangeInput" min="1" max="100" value="42">
+    <output name="output">42</output>
+  </form>
+
+  <p>Start your journey today! <a href="#">Sign Up Now</a></p>
+
+  <footer>
+    &copy; 2025 <abbr title="Interstellar Exploration Company">IEC</abbr>. All rights reserved.
+  </footer>
+
+</body>
+</html>
